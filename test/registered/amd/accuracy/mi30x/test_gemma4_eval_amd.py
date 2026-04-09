@@ -5,7 +5,7 @@ on MI325/MI300X. All Gemma 4 models require the Triton attention backend for
 bidirectional image-token attention on AMD GPUs.
 
 Ref: https://www.amd.com/en/developer/resources/technical-articles/2026/day-0-support-for-gemma-4-on-amd-processors-and-gpus.html
-Model PR: https://github.com/sgl-project/sglang/pull/21952
+Model support: https://github.com/sgl-project/sglang/pull/21952
 
 Registry: nightly-amd-accuracy-2-gpu-gemma4 suite
 """
@@ -54,10 +54,6 @@ GEMMA4_MODELS = [
         other_args=[
             "--attention-backend",
             "triton",
-            "--reasoning-parser",
-            "gemma4",
-            "--tool-call-parser",
-            "gemma4",
         ],
     ),
     ModelConfig(
@@ -68,10 +64,6 @@ GEMMA4_MODELS = [
         other_args=[
             "--attention-backend",
             "triton",
-            "--reasoning-parser",
-            "gemma4",
-            "--tool-call-parser",
-            "gemma4",
         ],
     ),
 ]
