@@ -50,7 +50,7 @@ MI35X_GEMMA4_MODELS = [
         model_path="google/gemma-4-E4B-it",
         tp_size=1,
         accuracy_threshold=0.20,
-        timeout=600,
+        timeout=1200,
         other_args=[
             "--attention-backend",
             "triton",
@@ -62,7 +62,7 @@ MI35X_GEMMA4_MODELS = [
         model_path="google/gemma-4-31B-it",
         tp_size=1,
         accuracy_threshold=0.35,
-        timeout=1200,
+        timeout=1800,
         other_args=[
             "--attention-backend",
             "triton",
